@@ -37,11 +37,11 @@ Perform these steps before starting the hands-on workshop:
 
 
 ## Instructions
-- [Section A: Create an assistant with a dialog skill]()
-- [Section B: Define entities for colors, ingredients, and flavor names]()
-- [Section C: Use a webhook to access the ice cream knowledge base]()
-- [Section D: Implement game play & deploy]()
-- [Bonus fun!]()
+- [Section A: Create an assistant with a dialog skill](#section-a-create-an-assistant-with-a-dialog-skill)
+- [Section B: Define entities for colors, ingredients, and flavor names](#section-b---define-entities-for-colors-ingredients-and-flavor-names)
+- [Section C: Use a webhook to access the ice cream knowledge base](#section-c---use-a-webhook-to-access-the-ice-cream-knowledge-base)
+- [Section D: Implement game play & deploy](#section-d---implement-game-play--deploy)
+- [Bonus fun!](#bonus-fun)
 
 <p>&nbsp;</p>
 
@@ -51,7 +51,6 @@ Perform these steps before starting the hands-on workshop:
 
 ## Section A: Create an assistant with a dialog skill
 See: [Section A demo video]()
-
 - Create a welcome message to begin the game
 - Create a Fall-back message for when the chatbot doesn't understand
 
@@ -59,6 +58,7 @@ See: [Section A demo video]()
 
 
 ## Section B - Define entities for colors, ingredients, and flavor names
+See: [Section B demo video]()
 - Recognize when a user mentions a color
 - Recognize when a user mentions an ingredient
 - Recognize when a user mentions a flavor name
@@ -67,6 +67,7 @@ See: [Section A demo video]()
 
 
 ## Section C - Use a webhook to access the ice cream knowledge base
+See: [Section C demo video]()
 - Look up a random flavor to start the game
 - Look up yes-or-no answers
 
@@ -74,6 +75,7 @@ See: [Section A demo video]()
 
 
 ## Section D - Implement game play & deploy
+See: [Section D demo video]()
 - Count the yes-or-no questions
 - Validate the flavor guess and end the game
 - Deploy chatbot to a web page
