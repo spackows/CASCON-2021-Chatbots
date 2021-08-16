@@ -1,18 +1,9 @@
 # CASCON 2021 Workshop: Build a chatbot that can play an ice cream guessing game using IBM Watson Assistant
-
 If you have any questions about this workshop, we would love to hear from you:
-
-Sarah Packowski ( IBM )<br/>
-spackows@ca.ibm.com
-
-Christopher Alfonso ( IBM )<br/>
-Christopher.Alfonso@ibm.com
-
-Noam Karakowsky ( University of Ottawa )<br/>
-nkarakow@gmail.com
-
-Parth Suthar ( IBM )<br/>
-Parth.Suthar@ibm.com
+- **Sarah Packowski** - IBM - ( spackows@ca.ibm.com )
+- **Christopher Alfonso** - IBM - ( Christopher.Alfonso@ibm.com )
+- **Noam Karakowsky** - University of Ottawa - ( nkarakow@gmail.com )
+- **Parth Suthar** - IBM - ( Parth.Suthar@ibm.com )
 
 <p>&nbsp;</p>
 
@@ -46,52 +37,55 @@ Perform these steps before starting the hands-on workshop:
 
 
 ## Instructions
+- [Section A: Create an assistant with a dialog skill]()
+- [Section B: Define entities for colors, ingredients, and flavor names]()
+- [Section C: Use a webhook to access the ice cream knowledge base]()
+- [Section D: Implement game play & deploy]()
+- [Bonus fun!]()
 
-[Section A - Create an assistant with a dialog skill]()
+<p>&nbsp;</p>
+
+*Instructions are under construction*
+
+<p>&nbsp;</p>
+
+## Section A: Create an assistant with a dialog skill
+See: [Section A demo video]()
+
 - Create a welcome message to begin the game
 - Create a Fall-back message for when the chatbot doesn't understand
-    
-[Section B - Define some entities]
-- Recognize when a user mentions a color, ingredient, or flavor
-    
-[Section C - Use a webhook to access the ice cream knowledge base]()
-- Look up a random flavor to start the game
-- Look up yes-or-no answers
-    
-[Section D - Implement game play]()
-- Count the yes-or-no questions
-- Validate the flavor guess
-    
-[Bonus fun!]()
-- Game play variations with intents
-- Giving users options
-- Implement a chatbot that can perform the role of Player B
-- Chabot vs. chatbot: two chatbots playing the game together
 
 <p>&nbsp;</p>
 
 
-## Section A - Create an assistant with a dialog skill
-
-<p>&nbsp;</p>
-
-
-## Section B - Define some entities
+## Section B - Define entities for colors, ingredients, and flavor names
+- Recognize when a user mentions a color
+- Recognize when a user mentions an ingredient
+- Recognize when a user mentions a flavor name
 
 <p>&nbsp;</p>
 
 
 ## Section C - Use a webhook to access the ice cream knowledge base
+- Look up a random flavor to start the game
+- Look up yes-or-no answers
 
 <p>&nbsp;</p>
 
 
-## Section D - Implement game play
+## Section D - Implement game play & deploy
+- Count the yes-or-no questions
+- Validate the flavor guess and end the game
+- Deploy chatbot to a web page
 
 <p>&nbsp;</p>
 
 
 ## Bonus fun!
+- Game play variations with intents
+- Giving users options
+- Implement a chatbot that can perform the role of Player B
+- Chabot vs. chatbot: two chatbots playing the game together
 
 <p>&nbsp;</p>
 
