@@ -52,7 +52,7 @@ Perform these steps before starting the hands-on workshop:
 ## Section A: Create an assistant with a dialog skill
 See: [Section A demo video]()
 - Create a welcome message to begin the game
-- Create a Fall-back message for when the chatbot doesn't understand
+- Create a fallback message for when the chatbot doesn't understand
 
 <p>&nbsp;</p>
 
