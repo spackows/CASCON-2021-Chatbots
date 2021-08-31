@@ -1,9 +1,11 @@
-# CASCON 2021 Workshop: Build a chatbot that can play an ice cream guessing game using IBM Watson Assistant
-If you have any questions about this workshop, we would love to hear from you:
-- **Sarah Packowski** - IBM - ( spackows@ca.ibm.com )
-- **Christopher Alfonso** - IBM - ( Christopher.Alfonso@ibm.com )
-- **Noam Karakowsky** - University of Ottawa - ( nkarakow@gmail.com )
-- **Parth Suthar** - IBM - ( Parth.Suthar@ibm.com )
+# CASCON 2021 Workshop
+
+**Build a chatbot that can play an ice cream guessing game using IBM Watson Assistant**
+
+Sarah Packowski - IBM ( spackows@ca.ibm.com )
+Christopher Alfonso - IBM ( Christopher.Alfonso@ibm.com )
+Noam Karakowsky - University of Ottawa ( nkarakow@gmail.com )
+Parth Suthar - IBM - ( Parth.Suthar@ibm.com )
 
 <p>&nbsp;</p>
 
