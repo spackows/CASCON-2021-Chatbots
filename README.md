@@ -2,9 +2,9 @@
 
 **Build a chatbot that can play an ice cream guessing game using IBM Watson Assistant**
 
-Sarah Packowski - IBM ( spackows@ca.ibm.com )
-Christopher Alfonso - IBM ( Christopher.Alfonso@ibm.com )
-Noam Karakowsky - University of Ottawa ( nkarakow@gmail.com )
+Sarah Packowski - IBM ( spackows@ca.ibm.com )<br/>
+Christopher Alfonso - IBM ( Christopher.Alfonso@ibm.com )<br/>
+Noam Karakowsky - University of Ottawa ( nkarakow@gmail.com )<br/>
 Parth Suthar - IBM - ( Parth.Suthar@ibm.com )
 
 <p>&nbsp;</p>
