@@ -61,7 +61,7 @@ Full instructions: [README-SectionA](README-SectionA.md)
 <p>&nbsp;</p>
 
 
-## Section B - Define entities for colors, ingredients, and flavor names
+## Section B: Define entities for colors, ingredients, and flavor names
 See: [Section B demo video]()
 - Recognize when a user mentions a color
 - Recognize when a user mentions an ingredient
@@ -72,7 +72,7 @@ Full instructions: [README-SectionB](README-SectionB.md)
 <p>&nbsp;</p>
 
 
-## Section C - Use a webhook to access the ice cream knowledge base
+## Section C: Use a webhook to access the ice cream knowledge base
 See: [Section C demo video]()
 - Look up a random flavor to start the game
 - Look up yes-or-no answers
@@ -82,7 +82,7 @@ Full instructions: [README-SectionC](README-SectionC.md)
 <p>&nbsp;</p>
 
 
-## Section D - Implement game play & deploy
+## Section D: Implement game play & deploy
 See: [Section D demo video]()
 - Count the yes-or-no questions
 - Validate the flavor guess and end the game
