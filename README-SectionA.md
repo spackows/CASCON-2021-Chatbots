@@ -139,13 +139,13 @@ You can quickly test your dialog by clicking <b>Try it</b>:
 ## Step 5: Define a fallback message
 The final node in the dialog tree has the special condition <code>anything_else</code>:
 
-<img src="images/anything-else.png" width="600">
+<img src="images/anything-else-2.png" width="600">
 
 If user input doesn't match the conditions for any other nodes in the tree, the final node will be triggered because <code>anything_else</code> matches anything.
 
 In the "Anything else" dialog node, enter several messages.  For variety, leave the dialog node to return one of them in <b>sequential</b> order:
 
-<img src="images/anything-else-dialog-node.png" width="800" >
+<img src="images/anything-else-dialog-node-2.png" width="800" >
 
 <p>&nbsp;</p>
 
