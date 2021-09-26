@@ -1,5 +1,7 @@
 # Section A: Create an assistant with a dialog skill
+See: [Section A demo video]()
 
+Full instructions:
 - [Step 1: Create an assistant](#step-1-create-an-assistant)
 - [Step 2: Create a dialog skill](#step-2-create-a-dialog-skill)
 - [Step 3: Define a welcome message](#step-3-define-a-welcome-message)
