@@ -39,10 +39,10 @@ Perform these steps before starting the hands-on workshop:
 
 
 ## Instructions
-- [Section A: Create an assistant with a dialog skill](#section-a---create-an-assistant-with-a-dialog-skill)
-- [Section B: Define entities for colors, ingredients, and flavor names](#section-b---define-entities-for-colors-ingredients-and-flavor-names)
-- [Section C: Use a webhook to access the ice cream knowledge base](#section-c---use-a-webhook-to-access-the-ice-cream-knowledge-base)
-- [Section D: Implement game play & deploy](#section-d---implement-game-play--deploy)
+- [Section A: Create an assistant with a dialog skill](#section-a-create-an-assistant-with-a-dialog-skill)
+- [Section B: Define entities for colors, ingredients, and flavor names](#section-b-define-entities-for-colors-ingredients-and-flavor-names)
+- [Section C: Use a webhook to access the ice cream knowledge base](#section-c-use-a-webhook-to-access-the-ice-cream-knowledge-base)
+- [Section D: Implement game play & deploy](#section-d-implement-game-play-deploy)
 - [Bonus fun!](#bonus-fun)
 
 <p>&nbsp;</p>
