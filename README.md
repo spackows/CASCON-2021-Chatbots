@@ -39,7 +39,7 @@ Perform these steps before starting the hands-on workshop:
 
 
 ## Instructions
-- [Section A: Create an assistant with a dialog skill](#section-a-create-an-assistant-with-a-dialog-skill)
+- [Section A: Create an assistant with a dialog skill](#section-a---create-an-assistant-with-a-dialog-skill)
 - [Section B: Define entities for colors, ingredients, and flavor names](#section-b---define-entities-for-colors-ingredients-and-flavor-names)
 - [Section C: Use a webhook to access the ice cream knowledge base](#section-c---use-a-webhook-to-access-the-ice-cream-knowledge-base)
 - [Section D: Implement game play & deploy](#section-d---implement-game-play--deploy)
@@ -56,6 +56,8 @@ See: [Section A demo video]()
 - Create a welcome message to begin the game
 - Create a fallback message for when the chatbot doesn't understand
 
+Full instructions: [README-SectionA](README-SectionA.md)
+
 <p>&nbsp;</p>
 
 
@@ -65,6 +67,8 @@ See: [Section B demo video]()
 - Recognize when a user mentions an ingredient
 - Recognize when a user mentions a flavor name
 
+Full instructions: [README-SectionB](README-SectionB.md)
+
 <p>&nbsp;</p>
 
 
@@ -72,6 +76,8 @@ See: [Section B demo video]()
 See: [Section C demo video]()
 - Look up a random flavor to start the game
 - Look up yes-or-no answers
+
+Full instructions: [README-SectionC](README-SectionC.md)
 
 <p>&nbsp;</p>
 
@@ -82,14 +88,19 @@ See: [Section D demo video]()
 - Validate the flavor guess and end the game
 - Deploy chatbot to a web page
 
+Full instructions: [README-SectionD](README-SectionD.md)
+
 <p>&nbsp;</p>
 
 
 ## Bonus fun!
+See: [Bonus demo video]()
 - Game play variations with intents
 - Giving users options
 - Implement a chatbot that can perform the role of Player B
 - Chabot vs. chatbot: two chatbots playing the game together
+
+Full instructions: [README-Bonus](README-Bonus.md)
 
 <p>&nbsp;</p>
 
