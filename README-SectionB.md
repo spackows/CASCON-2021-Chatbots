@@ -1,5 +1,5 @@
 # Section B: Define entities for colors, ingredients, and flavor names
-See: [Section A demo video]()
+See: [Section B demo video]()
 
 Full instructions:
 - [Step 1: Recognize when users mention a color](#step-1-recognize-when-users-mention-a-color)
