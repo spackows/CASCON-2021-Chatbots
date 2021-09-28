@@ -162,7 +162,7 @@ The bonus material explores creating Intents.
 </li>
 </ol>
 
-### 2.2 Upload entities from a file
+### 2.2 Upload entities from file
 <ol>
 <li>
 <p>In Watson Assistant, click the <b>Entities > My entities</b> menu entry.</p>
@@ -214,6 +214,38 @@ flavor,chocolate
 
 <img src="images/ingredient-dialog-node.png" width="800">
 
+<p>&nbsp;</p>
+
+
+## Step 3: Recognize when users mention a flavor
+
+### 3.1 Add dialog node for handling the case where a user mentions a flavor
+<ol>
+<li><p>Duplicate the "Ingredient question" node.</p></li>
+<li><p>Change the name of the new node to something like: <code>Flavor guess</code></p></li>
+<li><p>In the section labeled "If assistant recognizes", change the entity to: <code>@flavor</code></p></li>
+<li><p>In the "Assistant responds" section, print the matched flavor: <code>Flavor: &lt;? entities[0].value ?></code></p></li>
+</ol>
+
+<img src="images/flavor-guess-node.png" width="600">
+
+### 3.2 Test mentions of colors, ingredients, and flavors
+Try out your chatbot again, asking questions about colors or ingredients, and guessing the flavor.
+
+<p>&nbsp;</p>
+
+<table>
+<tr>
+<td>
+<h3>Ambiguity</h3>
+<p>
+When you test your chatbot after adding the "Ingredient question" node and the "Flavor guess" node, you'll see that sometimes the chatbot confuses flavors with ingredients and even colors.  We'll explore ways to handle this in <a href="./README-SectionD.md">Section D</a> of the workshop.
+</p>
+<img src="images/flavor-confusion.png" width="300">
+</td>
+</tr>
+<table>
+   
 <p>&nbsp;</p>
 
 
