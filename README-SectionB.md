@@ -144,4 +144,76 @@ The bonus material explores creating Intents.
 <p>&nbsp;</p>
 
 
+## Step 2: Recognize when users mention an ingredient
+
+### 2.1 Download entities file
+<ol>
+<li>
+<p>Right-click the following link and open it in a new browser tab: <a href="./entities.csv"><code>entities.csv</code></a></p>
+</li>
+<li>
+<p>Click <b>Raw</b>.</p>
+</li>
+<li>
+<p>Right-click in the middle of the page, and then select: "Save Page As ..."</p>
+</li>
+<li>
+<p>When saving the file, be sure to save the file with the <code>.csv</code> extension, not as the default type, <code>.txt</code>.</p>
+</li>
+</ol>
+
+### 2.2 Upload entities from a file
+<ol>
+<li>
+<p>In Watson Assistant, click the <b>Entities > My entities</b> menu entry.</p>
+</li>
+<li>
+<p>Click the <b>Upload entities</b> icon:<br/>
+<img src="images/upload-entities.png" width="400"></p>
+</li>
+<li>
+<p>Follow the prompts to upload the file you downloaded, <code>entities.csv</code></p>
+</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<table>
+<tr>
+<td>
+<h3>Format of entities file</h3>
+<p>The format of the <code>.csv</code> file for uploading entities is straightforward.  Each line contains a comma-separated list with the following elements: entity name, entity example value, and zero or more synonyms.</p>
+<p>Example:</p>
+<pre>ingredient,strawberries,strawberry
+ingredient,vanilla
+ingredient,vanilla wafers,wafers
+ingredient,walnuts,walnut
+flavor,banana cream pie
+flavor,booberry pie
+flavor,butterscotch ripple
+flavor,chocolate
+</pre>
+<p>To learn more, see: <a href="https://cloud.ibm.com/docs/assistant?topic=assistant-entities#entities-import">Uploading entities</a></p>
+</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+
+### 2.3 Create dialog node
+<ol>
+<li>
+<p>On the <b>Dialog</b> page, duplicate the "Color question" node:<br/>
+<img src="images/duplicate-node.png" width="600"></p>
+</li>
+<li><p>Change the name of the new node to something like: <code>Ingredient question</code></p></li>
+<li><p>In the section labeled "If assistant recognizes", change the entity to: <code>@ingredient</code></p></li>
+<li><p>Leave the section labeled "Assistant responds" as is.</p></li>
+</ol>
+
+<img src="images/ingredient-dialog-node.png" width="800">
+
+<p>&nbsp;</p>
+
 
