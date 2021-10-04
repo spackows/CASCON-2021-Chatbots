@@ -3,16 +3,16 @@
 See: [Section C demo video]()
 
 Full instructions:
-- [Step 1: Configure the webhook](#step-2-configure-the-webhook)
-- [Step 2: Look up a flavor to start the game](#step-3-look-up-a-flavor-to-start-the-game)
-- [Step 3: Set the FLAVOR environment variable](#step-4-set-the-flavor-environment-variable)
-- [Step 4: Answer color question](#step-5-answer-color-question)
-- [Step 5: Answer ingredient question](#step-6-answer-ingredient-question)
+- [Step 1: Configure the webhook](#step-1-configure-the-webhook)
+- [Step 2: Look up a flavor to start the game](#step-2-look-up-a-flavor-to-start-the-game)
+- [Step 3: Set the FLAVOR environment variable](#step-3-set-the-flavor-environment-variable)
+- [Step 4: Answer color question](#step-4-answer-color-question)
+- [Step 5: Answer ingredient question](#step-5-answer-ingredient-question)
 
 <p>&nbsp;</p>
 
 
-## Step 1: Recognize when users mention a color
+## Step 1: Configure the webhook
 
 ### 1.1 About the ice cream knowledge base
 The ice cream knowledge base is a web service deployed on IBM Cloud.  It was created to support building ice cream guessing game playing chatbots.
