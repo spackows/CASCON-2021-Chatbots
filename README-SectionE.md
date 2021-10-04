@@ -4,8 +4,8 @@ See: [Section E demo video]()
 
 Full instructions:
 - [Step 1: Game play variations with intents](#step-1-game-play-variations-with-intents)
-- [Step 2: Giving users options](#step-2-giving-users-options)
-- [Step 3: Implement a Player B chatbot](#step-3-implement-a-Player-B-chatbot)
+- [Step 2: Give users options](#step-2-give-users-options)
+- [Step 3: Implement a Player B chatbot](#step-3-implement-a-player-B-chatbot)
 - [Step 4: Chabot vs. chatbot](#step-4-chabot-vs-chatbot)
 
 <p>&nbsp;</p>
@@ -113,7 +113,81 @@ Full instructions:
 <p>&nbsp;</p>
 
 
-## Step 2: Giving users options
+## Step 2: Give users options
+Using _options_ is another way to shape user behavior.  Options are presented to users in an unordered list in the chatbot interface, and users can click one of the options to move the conversation forward in a direction you have designed for:
+
+<img src="images/options-list.png" width="300">
+
+Note: One down-side of options is that if you use too many, the chatbot can begin to feel less like a natural language interface and more like navigating a menu.
+
+<ol>
+<li>
+<p>Add a child node to the "Tell me" node.</p>
+<li>
+<p>Name the new node something like <code>Next steps options</code></p>
+</li>
+<li><p>In the <b>If assistant recognizes</b> section, specify: <code>anything_else</code></p>
+</li>
+<li>
+<p>In the <b>Assistant responds</b> section, choose the response type <b>Option</b></p>
+</li>
+<li>
+<p>In the <b>Title</b> field, enter a user prompt, like: <code>What do you want to do next?</code></p>
+</li>
+<li>
+<p>Enter the following list items:</p>
+<table>
+<tr><td><b>List label</b></td><td><b>Value</b></td></tr>
+<tr><td>Play again</td><td>Start the game over and play again</td></tr>
+<tr><td>Stop now</td><td>Let's not play anymore</td></tr>
+</table>
+<p><img src="images/options.png" width="600"></p>
+</li>
+<li>
+<p>In the <b>Then assistant should</b> section of the "Tell me" node, select <b>Skip user input</b>.</p>
+</li>
+</ol>
+
+<p>&nbsp;</p>
+
+**Dialog tree with new nodes for intents and options**
+
+<img src="images/intent-dialog-nodes.png" width="600">
+
+<p>&nbsp;</p>
+
+<table>
+<tr>
+<td>
+<h3>How options are handled</h3>
+<p>When a user clicks one of the list items, it's as if the user had typed in whatever is specified in the <b>Value</b> field of that option.</p>
+<p>So, if a user clicks the option labeled "Play again", it's as if the user had typed: "Start the game over and play again."  If a user types that, the chatbot classifies that input as #restart, and then works through the nodes in the dialog tree, starting from the top, until it hits the Play again node:</p>
+<p><img src="images/options-click.png" width="300"></p>
+</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+<tr>
+<td>
+<h3>Alternative options implementation</h3>
+<p>You can implement options in the "Tell me" dialog node with the answer message, instead of using a child node.</p>
+<ul>
+<li>The advantage to this implementation choice is that it streamlines the dialog tree (fewer nodes.)</li>
+<li>The disadvantage is that you cannot see the options handling at a glance when viewing the dialog tree.  To view the options, you have to edit the "Tell me" dialog node.</li>
+<li>One reason why you might want to have the options in a separate node is so that you could jump to that node.</li>
+</ul>
+<p><b>Demo video:</b> <a href="https://ibm.box.com/s/12jeyb1r0glu9f6p4b57o61vuefdfizu">Streamlined options</a></p>
+<table>
+<tr>
+<td valign="top"><p><b>Verbose method</b></p><img src="images/options-verbose.png" width="400"></td>
+<td valign="top"><p><b>Streamlined method</b></p><img src="images/options-streamlined.png" width="400"></td>
+</tr>
+</td>
+</tr>
+</table>
 
 <p>&nbsp;</p>
 
