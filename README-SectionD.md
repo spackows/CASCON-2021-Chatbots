@@ -234,7 +234,7 @@ So, it's not a bad strategy to design our dialog tree based on this assumption: 
 ### 3.3 Run your chatbot in a web page
 <ol>
 <li>
-<p>Download this sample file: <a href="index.html"><code>index.html</code></a></p>
+<p>Download this sample file: <a href="./sample-files/index.html"><code>index.html</code></a></p>
 <p><i>Note about downloading an individual file in GitHub:</i> Open that link in a new tab, click <b>Raw</b>, then right-click on the page and select "Save Page As ...". Save the file with the extension <code>.html</code></p>
 </li>
 <li>
