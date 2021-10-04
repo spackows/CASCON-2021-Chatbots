@@ -43,7 +43,7 @@ Perform these steps before starting the hands-on workshop:
 - [Section B: Define entities for colors, ingredients, and flavor names](#section-b-define-entities-for-colors-ingredients-and-flavor-names)
 - [Section C: Use a webhook to access the ice cream knowledge base](#section-c-use-a-webhook-to-access-the-ice-cream-knowledge-base)
 - [Section D: Implement game play and deploy](#section-d-implement-game-play-and-deploy)
-- [Bonus fun!](#bonus-fun)
+- [Section E: Bonus fun!](#section-e-bonus-fun)
 
 <p>&nbsp;</p>
 
@@ -93,14 +93,14 @@ Full instructions: [README-SectionD](README-SectionD.md)
 <p>&nbsp;</p>
 
 
-## Bonus fun!
-See: [Bonus demo video]()
+## Section E: Bonus fun!
+See: [Section E demo video]()
 - Game play variations with intents
 - Giving users options
-- Implement a chatbot that can perform the role of Player B
+- Implement a Player B chatbot
 - Chabot vs. chatbot: two chatbots playing the game together
 
-Full instructions: [README-Bonus](README-Bonus.md)
+Full instructions: [README-SectionE](README-SectionE.md)
 
 <p>&nbsp;</p>
 
