@@ -189,7 +189,7 @@ Note: One down-side of options is that if you use too many, the chatbot can begi
 
 
 ## Step 3: Implement a Player B chatbot
-Here is a sample skill that plays the role of Player B: [`Player-B-skill.json`](Player-B-skill.json)
+Here is a sample skill that plays the role of Player B: [`Player-B-skill.json`](./sample-files/Player-B-skill.json)
 
 *Note about downloading an individual file in GitHub:* Open that link in a new tab, click <b>Raw</b>, then right-click on the page and select "Save Page As ...". Save the file with the extension <code>.json</code>
 
