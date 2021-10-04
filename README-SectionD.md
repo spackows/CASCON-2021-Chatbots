@@ -1,7 +1,5 @@
 # Section D: Implement game play and deploy
 
-See: [Section D demo video]()
-
 Full instructions:
 - [Step 1: Count the yes-or-no questions](#step-1-count-the-yes-or-no-questions)
 - [Step 2: Validate the flavor guess and end the game](#step-2-validate-the-flavor-guess-and-end-the-game)
