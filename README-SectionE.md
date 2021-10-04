@@ -1,7 +1,5 @@
 # Section E: Bonus fun!
 
-See: [Section E demo video]()
-
 Full instructions:
 - [Step 1: Game play variations with intents](#step-1-game-play-variations-with-intents)
 - [Step 2: Give users options](#step-2-give-users-options)
