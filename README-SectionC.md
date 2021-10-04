@@ -1,7 +1,5 @@
 # Section C: Use a webhook to access the ice cream knowledge base
 
-See: [Section C demo video]()
-
 Full instructions:
 - [Step 1: Configure the webhook](#step-1-configure-the-webhook)
 - [Step 2: Look up a flavor to start the game](#step-2-look-up-a-flavor-to-start-the-game)
