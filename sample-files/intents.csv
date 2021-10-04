@@ -1,0 +1,24 @@
+Is it pink?,property-or-flavor-question
+Are there chocolate chips,property-or-flavor-question
+Is there fudge in it?,property-or-flavor-question
+Is it brown color?,property-or-flavor-question
+Are there cookies?,property-or-flavor-question
+Does it have nuts?,property-or-flavor-question
+Let's play again,restart
+Let's start over,restart
+Can we start again?,restart
+I want to start over,restart
+Can we restart?,restart
+I want to begin again,restart
+Stop,stop
+I give up,stop
+I don't know,stop
+I don't want to play anymore,stop
+I want to stop,stop
+Stop for now,stop
+What's the flavor?,tellme
+just tell me the answer,tellme
+Just tell me,tellme
+Tell me what it is,tellme
+What is it?,tellme
+What is the flavor?,tellme
