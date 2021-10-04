@@ -76,6 +76,120 @@ Full instructions:
 
 ## Step 2: Validate the flavor guess and end the game
 
+### 2.1 Save the flavor guess value
+<ol>
+<li>
+<p>In the <b>Assistant responds</b> section of the "Flavor guess" node, open the context editor.</p>
+</li>
+<li>
+<p>Add a variable, named <code>$FLAVOR_GUESS</code>, with a value of: <code>"&lt;? entities['flavor'][0].value ?>"</code></p>
+</li>
+<li>
+<p>Update the response text to: <code>Flavor guess : $FLAVOR_GUESS ...</code></p>
+</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<table>
+<tr>
+<td>
+<h3>Disambiguation strategy: Be specific with expressions</h3>
+<p>Notice here we use the more specific expression <code>entities['flavor'][0].value</code> instead of the generic expression we were using before, <code>entities[0].value</code>.</p>
+</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+### 2.2 Create "Flavor guess correct" child node
+<ol>
+<li>
+<p>Create a child node of the "Flavor guess" node.</p>
+</li>
+<li>
+<p>Name the new node something like: <code>Flavor guess correct</code></p>
+</li>
+<li>
+<p>In the <b>If assistant recognizes</b> section, enter the condition: <code>$FLAVOR_GUESS.equalsIgnoreCase( $FLAVOR )</code></p>
+<p>This string expression function performs a case-insensitive comparison of the user's matched flavor guess and the $FLAVOR variable set at the start of the case.  For more details, see: <a href="https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-methods#dialog-methods-strings-equals-ignore-case">String.equalsIgnoreCase(String)</a></p>
+</li>
+<li>
+<p>In the <b>Assistant responds</b> section, enter a cheerful response indicating the user won the game.</p>
+</li>
+</ol>
+
+### 2.3 Create "Flavor guess wrong" child node
+<ol>
+<li>
+<p>Create another child node of the "Flavor guess" node.</p>
+</li>
+<li>
+<p>Name the new node something like: <code>Flavor guess wrong</code></p>
+</li>
+<li>
+<p>In the <b>If assistant recognizes</b> section, enter the special condition <code>anything_else</code></p>
+</li>
+<li>
+<p>In the <b>Assistant responds</b> section, enter a polite response indicating the user didn't win the game.  Don't keep the user forever wondering, do tell them what the flavor was.</p>
+</li>
+</ol>
+
+### 2.4 Update "Flavor guess" node to skip to child nodes
+In the <b>Then assistant should</b> section, select <b>Skip user input</b>.
+
+### 2.5 Test guessing the flavor
+Click **Try it** and then guess some flavors, such as: `Rocky road` or `Tiger tail`
+
+Also try some ambiguous flavor names, like: `Cookies and cream` or `Red velvet cake`
+
+### 2.6 Move "Flavor guess" above "Property question"
+Many flavor entity values contain color or ingredient entities:
+- Flavor "Banana cream pie" contains the ingredient "banana" and the color "cream"
+- Flavor "Fudge ripple" contains the ingredient "fudge"
+- Flavor "Cookie dough" contains the ingredient "cookie" and the ingredient "dough"
+
+However, not many ingredient entity values contain flavor entities, and no color entity values contain flavor entities.
+
+So, it's not a bad strategy to design our dialog tree based on this assumption: If a user's input contains a flavor entity, they are more likely to be guessing the flavor than to be asking a Yes-or-No question about color or ingredients.
+
+<ol>
+<li>
+<p>On the "Flavor guess" node, open the menu and select "Move":<br/>
+<img src="images/move-node.png" width="400"></p>
+</li>
+<li>
+<p>Click on the "Property question" node, and then select "Above node":<br/>
+<img src="images/above-node.png" width="400"></p>
+</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<table>
+<tr>
+<td>
+<h3>Disambiguation strategy: Ordering of dialog nodes</h3>
+<p>When input matches the if-condition for more than one dialog node, the order of the nodes will determine which match gets the preference.</p>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td valign="top">
+<b>Property before flavor</b>
+<img src="images/property-then-flavor.png" width="400">
+</td>
+<td valign="top">
+<b>Flavor before property</b>
+<img src="images/flavor-then-property.png" width="400">
+</td>
+</tr>
+</table>
+</tr>
+</table>
+
 <p>&nbsp;</p>
 
 
