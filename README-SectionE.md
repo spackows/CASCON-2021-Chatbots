@@ -213,7 +213,7 @@ For example, if you have a chabot that can play the role of Player A and another
 
 Here is a sample Node.js script that causes the two chatbots to play the ice cream guessing game together:
 
-[`server.js`](server.js)
+[`server.js`](./sample-files/server.js)
 
 *Note about downloading an individual file in GitHub:* Open that link in a new tab, click <b>Raw</b>, then right-click on the page and select "Save Page As ...". Save the file with the extension <code>.js</code>
 
