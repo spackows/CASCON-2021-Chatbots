@@ -133,8 +133,6 @@ and
 <li><p><b><i>Entities</i></b> are important words matched in a user's input, like using Watson Natural Language Understanding (NLU).  Entities are usually the best way to identify what the user is specifically talking about. (eg. "pink" vs. "green")</p></li>
 <li><p><b><i>Intents</i></b> are classes, like using Watson Natural Language Classier (NLC).  Intents are usually the best way to identify the type of input. (eg. A goodbye message vs. a game-playing question)</p></li>
 </ul>
-<p>To learn more about NLU and NLC, see: <a href="https://github.ibm.com/spackows/AI-ContentOps/tree/master/workshops#internal-content-design-nlp-workshop-series">Content Design NLP workshop series</a></p>
-</p>
 The bonus material explores creating Intents.
 </td>
 </tr>
@@ -148,7 +146,7 @@ The bonus material explores creating Intents.
 ### 2.1 Download entities file
 <ol>
 <li>
-<p>Right-click the following link and open it in a new browser tab: <a href="./entities.csv"><code>entities.csv</code></a></p>
+<p>Right-click the following link and open it in a new browser tab: <a href="./sample-files/entities.csv"><code>entities.csv</code></a></p>
 </li>
 <li>
 <p>Click <b>Raw</b>.</p>
