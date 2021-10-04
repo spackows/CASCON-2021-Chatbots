@@ -1,0 +1,345 @@
+{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "yesno",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "yesno",
+          "patterns": [
+            "(?i)\\b(yes|no)\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://ice-cream-info.mybluemix.net",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Basic Y2hhdGJvdDpjZHdvcmtzaG9w"
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": []
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1627522074640",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Yellow answer",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_6_1627521480259",
+      "context": {
+        "yellow": "<? entities[0].literal ?>",
+        "NUM_ASKED": "<? $NUM_ASKED + 1 ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@yesno",
+      "dialog_node": "node_10_1627521568602"
+    },
+    {
+      "type": "standard",
+      "title": "Pink",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is it pink?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "! $pink && $NUM_ASKED < 5",
+      "dialog_node": "node_1_1627521914499",
+      "previous_sibling": "node_6_1627521480259"
+    },
+    {
+      "type": "standard",
+      "title": "Pink answer",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1627521914499",
+      "context": {
+        "pink": "<? entities[0].literal ?>",
+        "NUM_ASKED": "<? $NUM_ASKED + 1 ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@yesno",
+      "dialog_node": "node_2_1627521914501"
+    },
+    {
+      "type": "standard",
+      "title": "Submit guess",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is it $FLAVOR?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1627522074640",
+      "context": {
+        "FLAVOR": "$webhook_result_flavor-to-guess.flavor",
+        "GUESSED": true
+      },
+      "conditions": "$webhook_result_flavor-to-guess && $webhook_result_flavor-to-guess.flavor",
+      "dialog_node": "node_2_1627522377408"
+    },
+    {
+      "type": "standard",
+      "title": "Brown",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is it brown?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "! $brown && $NUM_ASKED < 5",
+      "dialog_node": "node_3_1627521951694",
+      "previous_sibling": "node_1_1627521914499"
+    },
+    {
+      "type": "standard",
+      "title": "Brown answer",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_3_1627521951694",
+      "context": {
+        "brown": "<? entities[0].literal ?>",
+        "NUM_ASKED": "<? $NUM_ASKED + 1 ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@yesno",
+      "dialog_node": "node_4_1627521951696"
+    },
+    {
+      "type": "standard",
+      "title": "Nuts",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Does it have nuts?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "! $nuts && $NUM_ASKED < 5",
+      "dialog_node": "node_5_1627521985494",
+      "previous_sibling": "node_3_1627521951694"
+    },
+    {
+      "type": "standard",
+      "title": "Look up guess",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "match1": "$yellow",
+            "match2": "$pink",
+            "match3": "$brown",
+            "match4": "$nuts",
+            "match5": "$cookies",
+            "value1": "yellow",
+            "value2": "pink",
+            "value3": "brown",
+            "value4": "nuts",
+            "value5": "cookies",
+            "property1": "color",
+            "property2": "color",
+            "property3": "color",
+            "property4": "ingredient",
+            "property5": "ingredient",
+            "request_type": "classify"
+          },
+          "result_variable": "webhook_result_flavor-to-guess"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "! $GUESSED",
+      "dialog_node": "node_5_1627522074640",
+      "previous_sibling": "node_7_1627522026806"
+    },
+    {
+      "type": "standard",
+      "title": "Yellow",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is it yellow?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "! $yellow && $NUM_ASKED < 5",
+      "dialog_node": "node_6_1627521480259",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Nuts answer",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1627521985494",
+      "context": {
+        "nuts": "<? entities[0].literal ?>",
+        "NUM_ASKED": "<? $NUM_ASKED + 1 ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@yesno",
+      "dialog_node": "node_6_1627521985495"
+    },
+    {
+      "type": "standard",
+      "title": "Cookies",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Does it have cookies?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "! $cookies && $NUM_ASKED < 5",
+      "dialog_node": "node_7_1627522026806",
+      "previous_sibling": "node_5_1627521985494"
+    },
+    {
+      "type": "standard",
+      "title": "Cookies answer",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_7_1627522026806",
+      "context": {
+        "cookies": "<? entities[0].literal ?>",
+        "NUM_ASKED": "<? $NUM_ASKED + 1 ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@yesno",
+      "dialog_node": "node_8_1627522026806"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": []
+      },
+      "context": {
+        "NUM_ASKED": 0
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": false,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Player B - Guess the flavor",
+  "language": "en",
+  "description": ""
+}
