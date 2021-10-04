@@ -42,7 +42,7 @@ Perform these steps before starting the hands-on workshop:
 - [Section A: Create an assistant with a dialog skill](#section-a-create-an-assistant-with-a-dialog-skill)
 - [Section B: Define entities for colors, ingredients, and flavor names](#section-b-define-entities-for-colors-ingredients-and-flavor-names)
 - [Section C: Use a webhook to access the ice cream knowledge base](#section-c-use-a-webhook-to-access-the-ice-cream-knowledge-base)
-- [Section D: Implement game play & deploy](#section-d-implement-game-play--deploy)
+- [Section D: Implement game play and deploy](#section-d-implement-game-play-and-deploy)
 - [Bonus fun!](#bonus-fun)
 
 <p>&nbsp;</p>
@@ -82,7 +82,7 @@ Full instructions: [README-SectionC](README-SectionC.md)
 <p>&nbsp;</p>
 
 
-## Section D: Implement game play & deploy
+## Section D: Implement game play and deploy
 See: [Section D demo video]()
 - Count the yes-or-no questions
 - Validate the flavor guess and end the game
