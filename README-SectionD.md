@@ -1,9 +1,9 @@
-# Section D: Count the yes-or-no questions
+# Section D: Implement game play and deploy
 
 See: [Section D demo video]()
 
 Full instructions:
-- [Step 1: Count the yes-or-no questions](#step-1-count-the-yes--or--no-questions)
+- [Step 1: Count the yes-or-no questions](#step-1-count-the-yes-or-no-questions)
 - [Step 2: Validate the flavor guess and end the game](#step-2-validate-the-flavor-guess-and-end-the-game)
 - [Step 3: Deploy chatbot to a web page](#step-3-deploy-chatbot-to-a-web-page)
 
@@ -194,5 +194,66 @@ So, it's not a bad strategy to design our dialog tree based on this assumption: 
 
 
 ## Step 3: Deploy chatbot to a web page
+
+### 3.1 Create an integration
+<ol>
+<li>
+<p>Navigate to the <b>Assistants</b> page by clicking the icon in the upper-left corner:</p>
+<p><img src="images/assistants-menu-icon.png" width="400"></p>
+</li>
+<li>
+<p>On the <b>Assistants</b> page, click on the assistant you created for this workshop series.</p>
+</li>
+<li>
+<p>If there are no skills associated with your assistant, click <b>Add an action or dialog skill</b> and then click on the skill you have been working on today.</p>
+</li>
+<li>
+<p>On the <b>Assistants</b> page, under the <b>Integrations</b> menu (lower, right-hand corner of the page), click <b>Integrate web chat</b>.</p>
+</li>
+<li>
+<p>Click <b>Create</b>.</p>
+</li>
+</ol>
+
+### 3.2 Customize the integration
+<ol>
+<li>
+<p>On the <b>Style</b> tab of the <b>Web chat</b> page, enter a unique name in the <b>Assistant's name as known by customers</b> field.</p>
+</li>
+<li>
+<p>On the <b>Home screen</b> tab, toggle the home screen off.</p>
+</li>
+<li>
+<p>On the <b>Suggestions</b> tab, toggle suggestions off.</p>
+</li>
+<li>
+<p>Click <b>Save and exit</b> to save your new integration.</p>
+</li>
+</ol>
+
+**Note**: Open your new integration again, and navigate to the <b>Embed</b> tab, because you will need information on that page for the next step.
+
+### 3.3 Run your chatbot in a web page
+<ol>
+<li>
+<p>Download this sample file: <a href="index.html"><code>index.html</code></a></p>
+<p><i>Note about downloading an individual file in GitHub:</i> Open that link in a new tab, click <b>Raw</b>, then right-click on the page and select "Save Page As ...". Save the file with the extension <code>.html</code></p>
+</li>
+<li>
+<p>In a text editor on your local computer, update <code>index.html</code> with details from the <b>Embed</b> tab of the <b>Web chat</b> page in Watson Assistant:</p>
+<ul>
+<li><code>integrationID</code></li>
+<li><code>region</code></li>
+<li><code>serviceInstanceID</code></li>
+</ul>
+<p><img src="images/integration-code.png" width="600"></p>
+</li>
+<li>
+<p>Open <code>index.html</code> in a web browser on your local computer.</p>
+</li>
+<li>
+<p>Click the chatbot icon in the lower-right corner of the web page to start the chat and play the game.</p>
+</li>
+</ol>
 
 <p>&nbsp;</p>
