@@ -203,6 +203,69 @@ Here is a sample skill that plays the role of Player B: [`Player-B-skill.json`](
 
 
 ## Step 4: Chabot vs. chatbot
+You can use the Watson Assistant API to integrate your chabot into an application.
+
+See: [Watson Assistant API](https://cloud.ibm.com/apidocs/assistant/assistant-v2)
+
+<p>&nbsp;</p>
+  
+**Sample Node.js script**
+
+For example, if you have a chabot that can play the role of Player A and another chatbot that can play the role of Player B:
+
+<img src="images/player-A-and-player-B.png" width="800">
+
+Here is a sample Node.js script that causes the two chatbots to play the ice cream guessing game together:
+
+[`server.js`](server.js)
+
+*Note about downloading an individual file in GitHub:* Open that link in a new tab, click <b>Raw</b>, then right-click on the page and select "Save Page As ...". Save the file with the extension <code>.js</code>
+
+<p>&nbsp;</p>
+
+**Steps for running the sample on your local computer**
+
+<ol>
+<li>
+<p>Install Node.js: <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">Installing Node.js and npm</a></p>
+</li>
+<li>
+<p>Download <code>server.js</code> to a working directory on your local computer.</p>
+</li>
+<li>
+<p>In a command window, in the working directory on your local computer, use <code>npm</code> to install two packages:</p>
+<pre>npm install ibm-watson</pre>
+<p>and</p>
+<pre>npm install sync</pre>
+</li>
+<li>
+<p>In a command window, in the working directory on your local computer, set some environment variables:</p>
+<table>
+<tr>
+<td valign="top"><b>Variable</b></td>
+<td valign="top"><b>Where to find details</b></td>
+</tr>
+<tr>
+<td valign="top"><p><code>APIKEY</code></p><p><code>URL</code></p></td>
+<td valign="top"><p>On the <b>Manage</b> page of your Watson Assistant instance in IBM Cloud:</p><img src="images/where-apikey.png" width="600"></td>
+</tr>
+<tr>
+<td valign="top"><p><code>ASSISTANTIDPLAYERA</code></p><p><code>ASSISTANTIDPLAYERB</code></p></td>
+<td valign="top"><p>You can find the <b>Assistant ID</b> for an assistant by accessing the <b>Settings</b> of the assistant in the Watson Assistant interface:</p><img src="images/where-settings.png" width="600"></td>
+</tr>
+</table>
+</li>
+<li>
+<p>Run the script:</p>
+<pre>node server.js</pre>
+</li>
+</ol>
+
+<p>&nbsp;</p>
+
+**Example output**
+
+<img src="images/script-output.png" width="600">
 
 <p>&nbsp;</p>
 
