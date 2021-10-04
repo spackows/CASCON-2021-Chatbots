@@ -14,7 +14,7 @@ Full instructions:
 ### 1.1 Define intents
 <ol>
 <li>
-<p>Download this file: <a href="intents.csv"><code>intents.csv</code></a>.</p>
+<p>Download this file: <a href="./sample-files/intents.csv"><code>intents.csv</code></a>.</p>
 <p><i>Note about downloading an individual file in GitHub:</i> Open that link in a new tab, click <b>Raw</b>, then right-click on the page and select "Save Page As ...". Save the file with the extension <code>.csv</code></p>
 </li>
 <li>
@@ -99,7 +99,6 @@ Full instructions:
 <td>
 <h3>Disambiguation feature</h3>
 <p>In the <b>Options &gt; Disambiguation</b> menu, you can toggle on or off a built-in disambiguation feature.  This feature fires when user input matches more than one intent with a high confidence.  When that happens, this feature prompts the user to select from a list of options that is generated from your chatbot's dialog nodes.</p>
-<p>Demo video: <a href="https://ibm.box.com/s/sn5xbpc457583xvqn7id23zq1i9gybho">Disambiguation feature</a></p>
 <p><b>Disambiguation ON</b></p>
 <p><img src="images/disambiguation-on.png" width="800"></p>
 <p><b>Disambiguation OFF</b></p>
@@ -177,7 +176,6 @@ Note: One down-side of options is that if you use too many, the chatbot can begi
 <li>The disadvantage is that you cannot see the options handling at a glance when viewing the dialog tree.  To view the options, you have to edit the "Tell me" dialog node.</li>
 <li>One reason why you might want to have the options in a separate node is so that you could jump to that node.</li>
 </ul>
-<p><b>Demo video:</b> <a href="https://ibm.box.com/s/12jeyb1r0glu9f6p4b57o61vuefdfizu">Streamlined options</a></p>
 <table>
 <tr>
 <td valign="top"><p><b>Verbose method</b></p><img src="images/options-verbose.png" width="400"></td>
