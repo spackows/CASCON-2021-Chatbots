@@ -52,7 +52,7 @@ Perform these steps before starting the hands-on workshop:
 <p>&nbsp;</p>
 
 ## Section A: Create an assistant with a dialog skill
-See: [Section A demo video]()
+See: [Section A demo video](./videos/sectionA.mp4) (~3 minutes)
 - Create a welcome message to begin the game
 - Create a fallback message for when the chatbot doesn't understand
 
