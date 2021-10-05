@@ -62,7 +62,7 @@ Full instructions: [README-SectionA](README-SectionA.md)
 
 
 ## Section B: Define entities for colors, ingredients, and flavor names
-See: [Section B demo video]()
+See: [Section B demo video](./videos/sectionB.mp4) (~3.5 minutes)
 - Recognize when a user mentions a color
 - Recognize when a user mentions an ingredient
 - Recognize when a user mentions a flavor name
