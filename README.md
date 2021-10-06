@@ -83,7 +83,7 @@ Full instructions: [README-SectionC](README-SectionC.md)
 
 
 ## Section D: Implement game play and deploy
-See: [Section D demo video]()
+See: [Section D demo video](./videos/sectionD.mp4) (~6 minutes)
 - Count the yes-or-no questions
 - Validate the flavor guess and end the game
 - Deploy chatbot to a web page
