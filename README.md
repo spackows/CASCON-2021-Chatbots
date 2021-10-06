@@ -73,7 +73,7 @@ Full instructions: [README-SectionB](README-SectionB.md)
 
 
 ## Section C: Use a webhook to access the ice cream knowledge base
-See: [Section C demo video]()
+See: [Section C demo video](./videos/sectionC.mp4) (~7.5 minutes)
 - Look up a random flavor to start the game
 - Look up yes-or-no answers
 
