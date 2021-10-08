@@ -94,7 +94,7 @@ Full instructions: [README-SectionD](README-SectionD.md)
 
 
 ## Section E: Bonus fun!
-See: [Section E demo video]()
+See: [Section E demo video](./videos/sectionE.mp4) (~7.5 minutes)
 - Game play variations with intents
 - Giving users options
 - Implement a Player B chatbot
