@@ -26,10 +26,7 @@ See: [The ice cream knowledge base](./README-ice-cream-info.md)
 <p>In the url field, paste: <code>https://ice-cream-info.mybluemix.net</code></p>
 </li>
 <li>
-<p>Click <b>Add header</b></p>
-</li>
-<li>
-<p>In the <b>Header name</b> field, paste: <code>Authorization</code></p>
+<p>Click <b>Add authorization</b></p>
 </li>
 <li>
 <p>In the <b>Basic authorization</b> modal that pops up, paste these values:</p>
